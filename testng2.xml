@@ -1,0 +1,11 @@
+<suite name="Loan Department" parallel="tests" thread-count="6">
+<test name="Personal loan">
+<parameter name="URL" value="personalloan.com"/>
+<parameter name="APIKey/usrname" value="123456"/>
+<packages>
+	<package name = 'testNG'/>
+	
+	
+</packages>
+</test>
+</suite>

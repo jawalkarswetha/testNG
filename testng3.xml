@@ -1,0 +1,19 @@
+<suite name="Loan Department" parallel="tests" thread-count="6">
+<test name="regresion">
+<parameter name="URL" value="personalloan.com"/>
+<parameter name="APIKey/usrname" value="123456"/>
+
+<groups> 
+<run>
+<include name="smoke"/>
+</run>
+</groups>
+
+<classes>
+<class name = "testNG.day1"/>
+<class name = "testNG.day2"/>
+<class name = "testNG.day3"/>
+<class name = "testNG.day4"/>
+</classes>
+</test>
+</suite>

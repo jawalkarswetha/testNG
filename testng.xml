@@ -1,0 +1,25 @@
+<suite name="Loan Department" parallel="tests" thread-count="6">
+	<test name="Personal loan">
+		<parameter name="URL" value="personalloan.com" />
+		<classes>
+			<class name="testNG.day1">
+				<methods>
+					<include name="Demo" />
+				</methods>
+			</class>
+			<class name="testNG.day2" />
+			<class name="testNG.day4" />
+		</classes>
+	</test>
+	<test name="Car Loan">
+		<parameter name="URL" value="carloan.com" />
+		<parameter name="APIKey/usrname" value="123456" />
+		<classes>
+			<class name="testNG.day3">
+				<methods>
+					<exclude name="API.*" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
